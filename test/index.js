@@ -1,5 +1,4 @@
 const assert = require("assert");
-const { it } = require("mocha");
 const fizzbuzz = require("../index");
 
 describe("fizzbuzz", () => {
