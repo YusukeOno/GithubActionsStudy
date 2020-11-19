@@ -1,5 +1,5 @@
-# GithubActionsStudy
-Studying is fun for me. Github Actions.
+# GitHubActionsStudy
+Studying is fun for me. GitHub Actions.
 
 ## Hello, World
 
