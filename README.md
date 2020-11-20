@@ -38,8 +38,10 @@ GitHubが提供するVM（仮想マシン）と、ユーザーが構築した独
 #### reference link
 
 GitHub Actionsの超基本！特別な設定が不要なCIサービス
+
 https://qiita.com/yassun-youtube/items/72e224d9df4c0fe21f86
 
 GitHub ActionsでLaravelのCI環境を作ってみた
+
 https://techracho.bpsinc.jp/wingdoor/2020_07_03/93868
 
