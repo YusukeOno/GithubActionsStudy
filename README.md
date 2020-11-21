@@ -1,14 +1,23 @@
 # GitHubActionsStudy
 Studying is fun for me. GitHub Actions.
 
+![Hello, World!](https://github.com/YusukeOno/GithubActionsStudy/workflows/Hello,%20World!/badge.svg)
+
 ![FizzBuzz Continuous Integration](https://github.com/YusukeOno/GithubActionsStudy/workflows/FizzBuzz%20Continuous%20Integration/badge.svg)
 
+![AWS Code Deploy](https://github.com/YusukeOno/GithubActionsStudy/workflows/AWS%20Code%20Deploy/badge.svg)
+
+## Overview
+
+![TODO](https://github.com/YusukeOno/GithubActionsStudy/wiki/img/orverview.png "Overview")
 
 ## Hello, World
 
 ```
 .github/workflows/hello.yml
 ```
+
+---
 
 ## 機能について
 
@@ -35,7 +44,48 @@ Studying is fun for me. GitHub Actions.
 
 GitHubが提供するVM（仮想マシン）と、ユーザーが構築した独自の環境（セルフホストランナー）があります。（通常は前者を利用）
 
-#### reference link
+---
+
+## Note.
+
+### GitHub Actionsをローカル環境でdryrunするには？
+
+actコマンドを利用します。
+
+https://github.com/nektos/act
+
+```
+# List the actions for the default event:
+act -l
+
+# List the actions for a specific event:
+act workflow_dispatch -l
+
+# Run the default (`push`) event:
+act
+
+# Run a specific event:
+act pull_request
+
+# Run a specific job:
+act -j test
+
+# Run in dry-run mode:
+act -n
+
+# Enable verbose-logging (can be used with any of the above commands)
+act -v
+```
+
+### ログを詳細に出すには？
+
+[GitHub]Actionsの動作確認時は忘れずにACTIONS_RUNNER_DEBUGとsACTIONS_STEP_DEBUGを設定しよう
+
+https://dev.classmethod.jp/articles/set-secrets-before-actions-test/
+
+---
+
+## reference link
 
 GitHub Actionsの超基本！特別な設定が不要なCIサービス
 
